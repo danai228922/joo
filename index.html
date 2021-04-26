@@ -19,8 +19,8 @@
       const result = await liff.shareTargetPicker([
         {
           "type": "flex",
-          "altText": "แบบสำรวจการจัดการเรียนรู้พระสอนศีลธรรม",
-          "contents": {
+          "altText": "แบบสำรวจสำหรับพระสอนศีลธรรม",
+          "contents":{
   "type": "bubble",
   "header": {
     "type": "box",
@@ -28,115 +28,154 @@
     "contents": [
       {
         "type": "text",
-        "text": "สำนักงานพระสอนศีลธรรม",
+        "text": "แบบสำรวจการเรียนการสอน",
+        "weight": "bold",
+        "align": "center",
+        "offsetTop": "none",
         "margin": "none",
-        "size": "lg",
-        "align": "start",
-        "offsetBottom": "none",
-        "offsetStart": "xl"
+        "size": "17px",
+        "offsetStart": "sm"
+      },
+      {
+        "type": "text",
+        "text": "สำหรับพระสอนศีลธรรม",
+        "align": "center",
+        "weight": "bold",
+        "size": "17px",
+        "offsetStart": "sm"
       },
       {
         "type": "image",
-        "url": "https://sv1.picz.in.th/images/2021/04/24/AjyIs8.png",
-        "align": "end",
-        "size": "xxs",
-        "offsetTop": "lg",
-        "offsetBottom": "none",
-        "offsetStart": "sm",
-        "offsetEnd": "lg",
-        "margin": "sm",
-        "position": "absolute"
+        "url": "https://sv1.picz.in.th/images/2021/04/25/AASLtI.png",
+        "position": "absolute",
+        "margin": "lg",
+        "size": "xs",
+        "offsetStart": "none",
+        "offsetBottom": "xxl"
+      },
+      {
+        "type": "spacer"
+      }
+    ],
+    "position": "relative",
+    "backgroundColor": "#FFFFCC"
+  },
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://sv1.picz.in.th/images/2021/04/26/APmpFa.png",
+        "size": "full",
+        "backgroundColor": "#FFFFCC",
+        "aspectRatio": "1:1",
+        "aspectMode": "cover"
+      },
+      {
+        "type": "text",
+        "text": "🙏นิมนต์พระสอนศีลธรรมทุกรูป  ",
+        "align": "center",
+        "size": "lg",
+        "margin": "xxl"
+      },
+      {
+        "type": "text",
+        "text": "ได้ทำแบบสำรวจ เรื่องความพร้อม",
+        "size": "lg",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "text": "การสอนของพระสอนศีลธรรมตามวิธี",
+        "size": "lg",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "text": "การที่ ศธ.กำหนด เพื่อรวบรวมข้อมูล",
+        "size": "lg",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "text": "ในการบริหารจัดการโครงการพระสอน",
+        "size": "lg",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "text": "ศีลธรรมในโรงเรียนต่อไป โดยสามารถ",
+        "size": "lg",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "text": "ตอบแบบสำรวจผ่านลิงค์ด้านล่างนี้",
+        "size": "lg",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "text": "🙇‍♀️ 👇   👇   👇 🙇‍♀️",
+        "gravity": "bottom",
+        "align": "center"
       }
     ]
   },
   "body": {
     "type": "box",
-    "layout": "vertical",
+    "layout": "horizontal",
     "contents": [
       {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://sv1.picz.in.th/images/2021/04/24/AjeUTu.gif",
-            "aspectMode": "fit",
-            "size": "full",
-            "backgroundColor": "#ffb500"
-          }
-        ],
-        "borderWidth": "2px",
-        "borderColor": "#FFA500",
-        "cornerRadius": "250px"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "🙏นิมนต์พระสอนศีลธรรมทุกรูป  📌ได้ทำแบบสำรวจ เรื่องความพร้อมการสอนของพระสอนศีลธรรมตามวิธีการที่ ศธ.กำหนด เพื่อรวบรวมข้อมูลในการบริหารจัดการโครงการพระสอนศีลธรรมต่อไป   🙇‍♀️👇 👇 👇 🙇‍♀️",
-            "margin": "xl",
-            "weight": "regular",
-            "style": "normal",
-            "gravity": "center",
-            "wrap": true,
-            "size": "lg",
-            "align": "center"
-          }
-        ]
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": " 👆 กดเริ่มทำแบบสำรวจที่นี้ครับ",
+          "uri": "https://forms.gle/LKnnyFHiYZRWmD4d8"
+        },
+        "style": "primary"
       }
     ]
   },
   "footer": {
     "type": "box",
-    "layout": "vertical",
+    "layout": "horizontal",
     "contents": [
       {
         "type": "button",
         "action": {
           "type": "uri",
-          "label": "กดเริ่มทำแบบสำรวจที่นี้",
-          "uri": "https://forms.gle/Nh9LKmnoKrxMHA3RA"
-        },
-        "style": "primary"
-      },
-      {
-        "type": "button",
-        "action": {
-          "type": "uri",
-          "label": "ดูผลแบบสำรวจ",
-          "uri": "https://datastudio.google.com/reporting/c1bf1d62-6192-405b-92f1-7b37a3613f95"
+          "label": "ดูคำตอบ",
+          "uri": "https://docs.google.com/forms/d/e/1FAIpQLSe8CBz0J74sgtLFKW7ohhOboUS0kJmoF4-ijAFUX-L3DNRR8Q/viewanalytics"
         },
         "style": "primary",
-        "color": "#0000FF",
-        "offsetBottom": "none",
-        "offsetStart": "none",
-        "offsetTop": "sm"
+        "color": "#FF3399"
       },
       {
         "type": "button",
         "action": {
           "type": "uri",
-          "label": "แชร์แบบสำรวจ",
+          "label": "แชร์ให้เพื่อน",
           "uri": "https://liff.line.me/1655879041-BXzN95yJ"
         },
+        "offsetEnd": "none",
         "style": "primary",
-        "color": "#FF0000",
-        "offsetTop": "md",
-        "offsetBottom": "lg",
-        "offsetStart": "none",
-        "offsetEnd": "none"
+        "offsetStart": "lg",
+        "color": "#3300FF"
       },
       {
-        "type": "separator",
-        "margin": "xxl"
+        "type": "spacer",
+        "size": "xxl"
       }
     ]
   },
   "styles": {
     "header": {
-      "backgroundColor": "#FFFFCC"
+      "separator": true
+    },
+    "body": {
+      "separator": true
     }
   }
 }
